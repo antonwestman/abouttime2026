@@ -38,6 +38,24 @@
         <strong>About time</strong>, eller hur? 🫣✨
         Vi ser fram emot att fira kärleken – och livet – tillsammans med er.
       </p>
+      <div class="countdown" aria-label="Nedräkning till bröllopet">
+        <div class="time">
+            <span id="days">–</span>
+            <small>dagar</small>
+        </div>
+        <div class="time">
+            <span id="hours">–</span>
+            <small>timmar</small>
+        </div>
+        <div class="time">
+            <span id="minutes">–</span>
+            <small>minuter</small>
+        </div>
+        <div class="time">
+            <span id="seconds">–</span>
+            <small>sekunder</small>
+        </div>
+    </div>
 
       <div class="cta">
         <a class="button" href="#osa">OSA</a>
@@ -127,5 +145,44 @@
       <p class="muted">Nathalie & Alex</p>
     </footer>
   </main>
+  <script>
+(function () {
+  const weddingDate = new Date("2026-08-08T14:00:00+02:00").getTime();
+
+  const els = {
+    days: document.getElementById("days"),
+    hours: document.getElementById("hours"),
+    minutes: document.getElementById("minutes"),
+    seconds: document.getElementById("seconds")
+  };
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = weddingDate - now;
+
+    if (diff <= 0) {
+      els.days.textContent = "0";
+      els.hours.textContent = "0";
+      els.minutes.textContent = "0";
+      els.seconds.textContent = "0";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    els.days.textContent = days;
+    els.hours.textContent = hours;
+    els.minutes.textContent = minutes;
+    els.seconds.textContent = seconds;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+})();
+</script>
+
 </body>
 </html>

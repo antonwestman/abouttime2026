@@ -181,3 +181,35 @@ li{ margin: 8px 0; }
   .grid{ grid-template-columns: 1fr; }
   .hero{ padding-top: 44px; }
 }
+
+.countdown{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 22px 0 26px;
+}
+
+.countdown .time{
+  min-width: 90px;
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.75);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.countdown span{
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.countdown small{
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: lowercase;
+}
