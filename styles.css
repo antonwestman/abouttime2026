@@ -4,8 +4,8 @@
   --text: #1f2937;
   --muted: #6b7280;
   --line: rgba(31,41,55,.10);
-  --accent: #c19db3;
-  --accent2: #9fc7b5;
+  --accent: #c7b3c0;
+--accent2: #b8cec4;
   --shadow: 0 10px 30px rgba(0,0,0,.06);
   --radius: 18px;
 }
@@ -42,11 +42,11 @@ body{
   color: var(--muted);
 }
 
-h1{
-  margin: 0 0 10px;
-  font-size: clamp(38px, 6vw, 64px);
-  letter-spacing: -0.02em;
+h1, h2{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  letter-spacing: -0.01em;
 }
+
 
 .subtitle{
   margin: 0 0 18px;
