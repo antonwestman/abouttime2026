@@ -1,22 +1,51 @@
 <!doctype html>
 <html lang="sv">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Nathalie & Alex – 8 augusti 2026" />
+  <meta name="theme-color" content="#F8F7F2" />
   <title>Nathalie & Alex – About time – 8 augusti 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <!-- Sticky navigation -->
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+      <a class="brand" href="#top">Nathalie & Alex<span class="brand-dot">.</span></a>
+
+      <nav class="nav" aria-label="Sidmeny">
+        <a href="#vigsel">Vigsel</a>
+        <a href="#fest">Middag & fest</a>
+        <a href="#kladsel">Klädsel</a>
+        <a href="#present">Present</a>
+        <a href="#tal">Tal</a>
+        <a href="#osa">OSA</a>
+        <a href="#resa">Resa</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="top" aria-hidden="true"></div>
+
+  <!-- Background blobs -->
+  <div class="bg-blob blob-1" aria-hidden="true"></div>
+  <div class="bg-blob blob-2" aria-hidden="true"></div>
+
+  <!-- Hero -->
   <header class="hero">
     <div class="container">
       <p class="kicker">Bröllop</p>
       <h1>Nathalie & Alex</h1>
       <p class="subtitle"><span class="badge">About time</span> <span class="dot">•</span> 8 augusti 2026</p>
 
-      <div class="quickfacts">
+      <div class="quickfacts" aria-label="Snabbfakta">
         <div class="fact">
           <div class="label">Vigsel</div>
           <div class="value">14:00</div>
@@ -29,35 +58,58 @@
         </div>
         <div class="fact">
           <div class="label">OSA</div>
-          <div class="value">senast 8 juni 2026</div>
-          <div class="muted">nathalie.korling@gmail.com</div>
+          <div class="value">Senast 8 juni 2026</div>
+          <div class="muted">via e‑post</div>
         </div>
       </div>
 
-        <p class="intro">
+      <p class="intro">
         Efter tio år som förlovade är det äntligen dags.
         <strong>About time</strong>.
         Vi ser fram emot att fira kärleken – och livet – tillsammans med er.
-        </p>
-<div class="countdown-wrapper" aria-label="Nedräkning till bröllopet">
-  <p class="countdown-title">Bröllopsdag om</p>
+      </p>
 
-  <div class="countdown">
-    <div class="time">
-      <span id="days">–</span>
-      <small>dagar</small>
-    </div>
-    <div class="time">
-      <span id="hours">–</span>
-      <small>timmar</small>
-    </div>
-    <div class="time">
-      <span id="minutes">–</span>
-      <small>minuter</small>
-    </div>
-  </div>
-</div>
+      <section class="countdown-wrapper" aria-label="Nedräkning till bröllopet">
+        <p class="countdown-title">Bröllopsdag om</p>
+        <div class="countdown" role="group" aria-label="Nedräkning">
+          <div class="time">
+            <span id="days">–</span>
+            <small>dagar</small>
+          </div>
+          <div class="time">
+            <span id="hours">–</span>
+            <small>timmar</small>
+          </div>
+          <div class="time">
+            <span id="minutes">–</span>
+            <small>minuter</small>
+          </div>
+        </div>
+      </section>
 
+      <section class="gallery2" aria-label="Bilder på Nathalie och Alex">
+        <figure class="photo main">
+          <img src="images/1000018766.jpg" alt="Nathalie och Alex" loading="lazy" />
+        </figure>
+
+        <div class="strip" aria-label="Bildremsa">
+          <figure class="photo">
+            <img src="images/1000018767.jpg" alt="Nathalie och Alex" loading="lazy" />
+          </figure>
+          <figure class="photo">
+            <img src="images/1000018768.jpg" alt="Nathalie och Alex" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="squares" aria-label="Kvadratiska bilder">
+          <figure class="photo">
+            <img src="images/1000018769.jpg" alt="Nathalie och Alex" loading="lazy" />
+          </figure>
+          <figure class="photo">
+            <img src="images/1000018770.jpg" alt="Nathalie och Alex" loading="lazy" />
+          </figure>
+        </div>
+      </section>
 
       <div class="cta">
         <a class="button" href="#osa">OSA</a>
@@ -67,21 +119,30 @@
   </header>
 
   <main class="container">
-    <section class="card" id="vigsel">
-      <h2>💍 Vigsel</h2>
-      <p><strong>Lördag 8 augusti 2026 kl. 14:00</strong></p>
-      <p>
-        <strong>Värmdö kyrka</strong><br />
-        Värmdövägen 55–57, 139 50 Värmdö
-      </p>
-      <p class="links">
-        <a href="https://www.google.com/maps/search/?api=1&query=V%C3%A4rmd%C3%B6+kyrka+V%C3%A4rmd%C3%B6v%C3%A4gen+55-57+139+50+V%C3%A4rmd%C3%B6" target="_blank" rel="noopener">Öppna i Google Maps</a>
-      </p>
+    <section class="band">
+      <div class="container">
+        <section class="card" id="vigsel">
+          <h2>Vigsel</h2>
+          <p><strong>Lördag 8 augusti 2026 kl. 14:00</strong></p>
+          <p>
+            <strong>Värmdö kyrka</strong><br />
+            Värmdövägen 55–57, 139 50 Värmdö
+          </p>
+          <p class="links">
+            <a href="https://www.google.com/maps/search/?api=1&query=V%C3%A4rmd%C3%B6+kyrka+V%C3%A4rmd%C3%B6v%C3%A4gen+55-57+139+50+V%C3%A4rmd%C3%B6" target="_blank" rel="noopener">Öppna i Google Maps</a>
+          </p>
+        </section>
+      </div>
     </section>
 
     <section class="card" id="fest">
-      <h2>🥂 Middag & fest</h2>
+      <h2>Middag & fest</h2>
       <p>Mottagning med middag och fest direkt efter vigseln.</p>
+      <p>
+        Efter vigseln är ni hjärtligt välkomna till bygdegården, där vi fortsätter firandet med mottagning,
+        middag, dryck och fest. Ta er gärna dit direkt efter kyrkan. Det finns gott om parkeringsplatser
+        samt en busshållplats cirka 50 meter från lokalen.
+      </p>
       <p>
         <strong>Värmdö bygdegård</strong><br />
         Skärgårdsvägen 291, 139 33 Värmdö
@@ -90,52 +151,61 @@
         <a href="https://www.google.com/maps/search/?api=1&query=V%C3%A4rmd%C3%B6+bygdeg%C3%A5rd+Sk%C3%A4rg%C3%A5rdsv%C3%A4gen+291+139+33+V%C3%A4rmd%C3%B6" target="_blank" rel="noopener">Öppna i Google Maps</a>
       </p>
       <p class="note">
-        Vi har tillgång till bygdegården redan från dagen innan – så kvällen blir lång, varm och fylld av dans 💃🕺
+        Vi har tillgång till bygdegården redan från dagen innan, vilket ger goda förutsättningar för en lång och minnesvärd kväll.
       </p>
     </section>
 
-    <section class="grid">
-      <section class="card">
-        <h2>👔 Klädsel</h2>
-        <p><strong>Sommarfin</strong> i <strong>pastellfärger</strong> 🌸🌿</p>
-        <p class="muted">Kavaj är fint. Slips är frivilligt. Bekväma skor rekommenderas.</p>
-      </section>
+    <section id="kladsel" class="section">
+      <div class="grid">
+        <section class="card">
+          <h2>Klädsel</h2>
+          <p><strong>Sommarfin</strong> i pastellfärger.</p>
+          <p class="muted">Kavaj är fint. Slips är frivilligt. Bekväma skor rekommenderas.</p>
+        </section>
 
-      <section class="card">
-        <h2>👶 Barnfri fest</h2>
-<p>
-  Vi älskar era barn och är tacksamma för att ha dem i våra liv.
-  På vår bröllopsdag önskar vi dock en fest för vuxna, så att ni som föräldrar
-  kan slappna av och fira tillsammans med oss fullt ut.
-</p>
-      </section>
+        <section class="card">
+          <h2>Barnfri fest</h2>
+          <p>
+            Vi älskar era barn och är tacksamma för att ha dem i våra liv.
+            På vår bröllopsdag önskar vi dock en fest för vuxna, så att ni som föräldrar
+            kan slappna av och fira tillsammans med oss fullt ut.
+          </p>
+        </section>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>🎤 Tal & spex</h2>
+    <section class="card" id="present">
+      <h2>Bröllopspresent</h2>
       <p>
-        Vill du hålla tal, göra ett spex eller bidra med något annat under dagen?
-        Hör av dig till vår toastmaster:
+        Er närvaro är den största presenten för oss. Om ni ändå skulle vilja ge något önskar vi oss gärna ett bidrag
+        till en kommande resa eller till ett projekt i vårt hem, då vi redan har det mesta vi behöver.
       </p>
-      <p class="toastmaster">
-          <strong>Anton Westman</strong><br />
-          <p class="email">
-    <a href="mailto:antonwestman+abouttime2026@gmail.com?subject=OSA%20-%20Nathalie%20%26%20Alex%208%2F8%202026">antonwestman@gmail.com</a>
-  </p>
+    </section>
+
+    <section class="card" id="tal">
+      <h2>Tal</h2>
+      <p>
+        Önskar du hålla tal eller bidra med något under dagen? Vänligen ta kontakt med vår toastmaster:
       </p>
+      <div class="contact">
+        <p class="contact-name"><strong>Anton Westman</strong></p>
+        <p class="email">
+          <a href="mailto:antonwestman+abouttime2026@gmail.com?subject=Tal%20-%20Nathalie%20%26%20Alex%208%2F8%202026">antonwestman+abouttime2026@gmail.com</a>
+        </p>
+      </div>
     </section>
 
     <section class="card" id="osa">
-      <h2>✉️ OSA</h2>
+      <h2>OSA</h2>
       <p>Vänligen svara senast <strong>8 juni 2026</strong> till:</p>
       <p class="email">
-        <a href="mailto:nathalie.korling@gmail.com?subject=OSA%20-%20Nathalie%20%26%20Alex%208%2F8%202026&body=Hej!%0A%0ANamn:%0AKommer:%20Ja%2FNej%0AAntal:%0AAllergier%2Finfo:%0A%0A">nathalie.korling@gmail.com</a>
+        <a href="mailto:fambrellas+abouttime2026@gmail.com?subject=OSA%20-%20Nathalie%20%26%20Alex%208%2F8%202026&body=Hej!%0A%0ANamn:%0AKommer:%20Ja%2FNej%0AAntal:%0AAllergier%2Finfo:%0A%0A">fambrellas+abouttime2026@gmail.com</a>
       </p>
       <p class="muted">Skriv gärna eventuella allergier eller annan viktig information också.</p>
     </section>
 
     <section class="card" id="resa">
-      <h2>🚌 Resa & kommunikation</h2>
+      <h2>Reseinformation – kollektivt</h2>
       <ul>
         <li><strong>Slussen → Värmdö kyrka</strong> (hållplats: Värmdö kyrka) <span class="muted">ca 40 min</span></li>
         <li><strong>Värmdö kyrka → Värmdö bygdegård</strong> (hållplats: Hemmesta vägskäl) <span class="muted">ca 7 min</span></li>
@@ -145,54 +215,46 @@
 
     <footer class="footer">
       <p class="muted">
-        <a href="https://www.instagram.com/explore/tags/abouttime2026/" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            #abouttime2026
-        </a>
-        </p>
+        <a href="https://www.instagram.com/explore/tags/abouttime2026/" target="_blank" rel="noopener noreferrer">#abouttime2026</a>
+      </p>
       <p>Vi längtar efter att fira med er ❤️</p>
       <p class="muted">Nathalie & Alex</p>
     </footer>
   </main>
+
   <script>
-(function () {
-  const weddingDate = new Date("2026-08-08T14:00:00+02:00").getTime();
+    (function () {
+      const weddingDate = new Date("2026-08-08T14:00:00+02:00").getTime();
 
-  const els = {
-    days: document.getElementById("days"),
-    hours: document.getElementById("hours"),
-    minutes: document.getElementById("minutes"),
-    seconds: document.getElementById("seconds")
-  };
+      const els = {
+        days: document.getElementById("days"),
+        hours: document.getElementById("hours"),
+        minutes: document.getElementById("minutes")
+      };
 
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const diff = weddingDate - now;
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = weddingDate - now;
 
-    if (diff <= 0) {
-      els.days.textContent = "0";
-      els.hours.textContent = "0";
-      els.minutes.textContent = "0";
-      els.seconds.textContent = "0";
-      return;
-    }
+        if (diff <= 0) {
+          els.days.textContent = "0";
+          els.hours.textContent = "0";
+          els.minutes.textContent = "0";
+          return;
+        }
 
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-    const seconds = Math.floor((diff / 1000) % 60);
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
 
-    els.days.textContent = days;
-    els.hours.textContent = hours;
-    els.minutes.textContent = minutes;
-    els.seconds.textContent = seconds;
-  }
+        els.days.textContent = days;
+        els.hours.textContent = hours;
+        els.minutes.textContent = minutes;
+      }
 
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-})();
-</script>
-
+      updateCountdown();
+      setInterval(updateCountdown, 60 * 1000);
+    })();
+  </script>
 </body>
 </html>
